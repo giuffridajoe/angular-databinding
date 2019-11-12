@@ -11,7 +11,7 @@ import { ServerElementComponent } from './server-element/server-element.componen
   declarations: [
     AppComponent,
     ServerElementComponent,
-    CockpitComponent
+    CockpitComponent,
   ],
   imports: [
     BrowserModule,

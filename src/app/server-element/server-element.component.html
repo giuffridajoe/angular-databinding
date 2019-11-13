@@ -2,9 +2,7 @@
     class="panel panel-default">
     <div class="panel-heading">{{ element.name }}</div>
     <div class="panel-body">
-        <p>
-            <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
-            <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
-        </p>
+        <!-- this is a directive that serves as a hook placed in the component to mark a place for Angular to project any content it finds between the opening and closing tag of a component selector. here this is used in the app component  -->
+        <ng-content></ng-content>
     </div>
 </div>

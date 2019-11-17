@@ -27,7 +27,22 @@ export class CockpitComponent implements OnInit {
      *  
      * 3. ngDoCheck:
      *    will also run multiple times
-     *    will run whenever change detection runs. (system by which Angular determines whether something           changed).
+     *    will run whenever change detection runs or any events are triggered (even clicks). (system by which Angular determines whether something changed).
+     * 
+     * 4. ngAfterContentInit:
+     *    called whenever content which projected by ngContent has been initialized
+     * 
+     * 5. ngAfterContentChecked:
+     *    called whenever change detection checked the content projected into the component
+     * 
+     * 6. ngAfterViewInit:
+     *    reached when view of the component has been rendered
+     * 
+     * 7. ngAfterViewChecked:
+     *    called whenever view has been checked and everything is done and displayed in the view
+     * 
+     * 8. ngOnDestroy:
+     *    called once the component is about to be destroyed
     */
     ngOnInit() {}
 

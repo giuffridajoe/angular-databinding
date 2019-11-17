@@ -1,6 +1,7 @@
 <div
     class="panel panel-default">
-    <div class="panel-heading">{{ element.name }}</div>
+    <!-- <div class="panel-heading">{{ element.name }}</div> -->
+    <div class="panel-heading" #heading>{{ name }}</div>
     <div class="panel-body">
         <!-- this is a directive that serves as a hook placed in the component to mark a place for Angular to project any content it finds between the opening and closing tag of a component selector. here this is used in the app component  -->
         <ng-content></ng-content>
